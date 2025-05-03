@@ -1,0 +1,4 @@
+<modelResource>
+  <path>ontologyImports</path>
+  <moduleType component="metamodels" name="OntologyImport"/>
+</modelResource>

@@ -1,0 +1,7 @@
+-- anchor:custom-parent:start
+  <parent>
+    <groupId>net.democritus</groupId>
+    <artifactId>nsx-parent</artifactId>
+    <version>2024.2.0</version>
+  </parent>
+-- anchor:custom-parent:end

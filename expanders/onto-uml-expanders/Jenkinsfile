@@ -1,0 +1,72 @@
+pipeline {
+  options {
+    disableConcurrentBuilds()
+    // Only keep the 50 most recent builds in Jenkins
+    buildDiscarder(logRotator(numToKeepStr: "50"))
+  }
+  agent any
+  tools {
+    maven 'maven'
+    jdk 'jdk21'
+  }
+  environment {
+    POM_INFO = pomInfo()
+    MVN_VERSION = "${POM_INFO.version}"
+  }
+  stages {
+    stage('build') {
+      steps {
+        withSonarQubeEnv('nsx') {
+          sh 'mvn clean verify'
+        }
+      }
+    }
+    stage('deploy') {
+      when {
+        anyOf {
+          allOf {
+            expression { BRANCH_NAME ==~ /(develop|support\/.*)/  }
+            expression { MVN_VERSION ==~ /\d+\.\d+\.\d+-SNAPSHOT/ }
+          }
+
+          allOf {
+            buildingTag()
+            expression { MVN_VERSION ==~ /\d+\.\d+\.\d+/ }
+          }
+
+          allOf {
+            expression { BRANCH_NAME ==~ /feature\/.*/ }
+            expression { MVN_VERSION ==~ /\d+\.\d+\.\d+-[A-Za-z0-9]+(-[A-Za-z0-9]+)*-SNAPSHOT/ }
+          }
+        }
+      }
+      steps {
+        sh 'mvn deploy -P !nsx-sonar'
+      }
+    }
+    stage('report') {
+      steps {
+        dependencyAnalyzer()
+        waitForQualityGate abortPipeline: false
+        sonarGate()
+      }
+    }
+    stage('analyze') {
+      when {
+        allOf {
+          buildingTag()
+          expression { MVN_VERSION ==~ /\d+\.\d+\.\d+/ }
+        }
+      }
+      steps {
+        analyzeProject type: 'expansion_resource'
+      }
+    }
+  }
+  post {
+    always {
+      buildReport(slackChannel: '#build-status')
+      junit '**/target/surefire-reports/**/*.xml'
+    }
+  }
+}

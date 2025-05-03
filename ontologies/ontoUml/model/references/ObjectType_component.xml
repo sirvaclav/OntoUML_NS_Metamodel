@@ -1,0 +1,9 @@
+<reference name="component">
+  <associationType name="extension"/>
+  <owner name="ObjectType" ontology="ontoUml"/>
+  <target name="Component" ontology="elements"/>
+  <cardinality>
+    <minimum>0</minimum>
+    <maximum>1</maximum>
+  </cardinality>
+</reference>

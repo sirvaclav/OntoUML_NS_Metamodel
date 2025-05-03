@@ -1,0 +1,9 @@
+<reference name="phasePropertyDependency">
+  <associationType name="association"/>
+  <owner name="Phase" ontology="ontoUml"/>
+  <target name="Aspect" ontology="ontoUml"/>
+  <cardinality>
+    <minimum>1</minimum>
+    <maximum>*</maximum>
+  </cardinality>
+</reference>

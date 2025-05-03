@@ -1,0 +1,14 @@
+<expansionSettings>
+  <modelDirectory>..</modelDirectory>
+  <expansionDirectory>../expansions</expansionDirectory>
+  <expansionResources>
+    <expansionResource name="net.democritus.metamodel:nsx-metamodel-stack" version="2025.2.0"/>
+  </expansionResources>
+  <expansions>
+    <expansion>
+      <type component="metamodels.v3" name="Metamodel"/>
+      <target>methamodelMetamodel</target>
+      <profile name="Standard Metamodel"/>
+    </expansion>
+  </expansions>
+</expansionSettings>

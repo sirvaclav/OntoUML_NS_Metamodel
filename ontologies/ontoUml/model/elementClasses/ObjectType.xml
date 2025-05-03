@@ -1,0 +1,13 @@
+<elementClass name="ObjectType">
+  <isGloballyUnique>false</isGloballyUnique>
+  <isAbstract>true</isAbstract>
+  <isSealed>false</isSealed>
+  <group name="OntoUML" ontology="ontoUml"/>
+  <role name="element"/>
+  <attributes>
+    <attribute name="name">
+      <isIdentifier>true</isIdentifier>
+      <dataType name="Name" ontology="ontoUml"/>
+    </attribute>
+  </attributes>
+</elementClass>

@@ -1,0 +1,12 @@
+<expansionMetamodel name="methamodelMetamodel">
+  <group>ontoUml.model</group>
+  <version>1.0.0-SNAPSHOT</version>
+  <ontologies>
+    <ontology name="ontoUml"/>
+  </ontologies>
+  <ontologyImports>
+    <ontologyImport>
+      <ontology name="elements"/>
+    </ontologyImport>
+  </ontologyImports>
+</expansionMetamodel>

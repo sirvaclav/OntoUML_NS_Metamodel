@@ -1,0 +1,45 @@
+pipeline {
+  options {
+    // Only keep the 50 most recent builds in Jenkins
+    buildDiscarder(logRotator(numToKeepStr: "50"))
+    timeout(time: 10, unit: 'MINUTES')
+  }
+  agent any
+  tools {
+    maven 'maven'
+    jdk 'jdk21'
+  }
+  environment {
+    POM_INFO = pomInfo()
+    MVN_VERSION = "${POM_INFO.version}"
+  }
+  stages {
+    stage('expand') {
+      steps {
+        sh 'mvn expanders:expand'
+      }
+    }
+    stage('build') {
+      steps {
+        dir('expansions/onto-uml-plugin') {
+          sh 'npm install'
+          sh 'npm run build'
+          sh 'mvn deploy'
+        }
+      }
+    }
+    stage('publish') {
+      when {
+        expression { MVN_VERSION ==~ /\d+\.\d+\.\d+/ }
+      }
+      steps {
+        registerMicroRadiantPluginVersion pluginManifestFile: 'expansions/onto-uml-plugin/src/meta/micro-radiant.plugin.xml'
+      }
+    }
+  }
+  post {
+    always {
+      buildReport(slackChannel: '#build-status')
+    }
+  }
+}

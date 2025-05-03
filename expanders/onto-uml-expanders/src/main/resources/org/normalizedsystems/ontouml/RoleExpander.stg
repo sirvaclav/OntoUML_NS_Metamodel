@@ -1,0 +1,39 @@
+delimiters "<", ">"
+
+base() ::= <<
+// <expanderComment>
+
+
+// anchor:imports:start
+@imports
+// anchor:imports:end
+
+public class <role> {
+    private final <dataElementName>Data dataElementCounterpart;
+
+<relators:{relator|
+    private final <relator.name> m<relator.name>;
+}>
+
+    public <role>(){
+    }
+
+    public <dataElementName>Data getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final <dataElementName>Data dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+<relators:{relator|
+
+    public <relator.name> get<relator.name>(){
+        return this.m<relator.name>;
+    \}
+
+    public void set<relator.name>(<relator.name> <relator.name.firstToLower>){
+        this.m<relator.name> = <relator.name.firstToLower>;
+    \}
+}>
+}
+>>

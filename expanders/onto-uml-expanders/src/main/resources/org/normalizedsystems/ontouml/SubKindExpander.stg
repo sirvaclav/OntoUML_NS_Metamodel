@@ -1,0 +1,33 @@
+delimiters "<", ">"
+
+base() ::= <<
+// <expanderComment>
+
+// anchor:imports:start
+@imports
+// anchor:imports:end
+
+public class <subKind> {
+    private final <dataElementName>Data dataElementCounterpart;
+    private final <identityProvider> identityProvider;
+
+    public <subKind>(){
+    }
+
+    public <dataElementName>Data getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final <dataElementName>Data dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+
+    public <identityProvider> getIdentityProvider(){
+        return this.identityProvider;
+    }
+
+    public void setIdentityProvider(final <identityProvider> identityProvider){
+        this.identityProvider = identityProvider;
+    }
+}
+>>

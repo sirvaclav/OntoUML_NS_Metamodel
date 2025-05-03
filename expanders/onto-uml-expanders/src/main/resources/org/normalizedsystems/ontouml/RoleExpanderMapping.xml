@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping xmlns="https://schemas.normalizedsystems.org/xsd/expanders/2024/0/0/mapping">
+  <artifact this="objectType.name + 'Role'" importStrategy="java"/>
+
+  <value name="role" eval="objectType.name"/>
+  <value name="dataElementName" eval="objectType.dataElement.getName()" />
+<!--  <value name="skrr" eval="objectType.antiRigidIdentityInheritance.getName()"/>-->
+  <list name="relators" eval="objectType.roleRelationalDependency" param="relator">
+    <value name="name" eval="relator.getName()" />
+  </list>
+</mapping>

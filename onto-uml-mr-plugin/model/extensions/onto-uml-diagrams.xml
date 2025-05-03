@@ -1,0 +1,12 @@
+<editorModelExtension xmlns="https://schemas.normalizedsystems.org/xsd/editorElements/3/8/0">
+  <name>onto-uml-diagrams</name>
+  <diagramComponents>
+    <diagramComponent>
+      <name>OntoUml</name>
+      <title>OntoUML Classes</title>
+      <projectViews>
+        <elementClass>elements::Component</elementClass>
+      </projectViews>
+    </diagramComponent>
+  </diagramComponents>
+</editorModelExtension>

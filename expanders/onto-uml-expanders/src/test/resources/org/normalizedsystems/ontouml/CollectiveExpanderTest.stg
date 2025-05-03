@@ -1,0 +1,48 @@
+delimiters "%", "%"
+
+testBase() ::= <<
+// @expanderComment@
+
+// anchor:imports:start
+// anchor:imports:end
+
+public class CitiesCollective {
+    private final CitiesData dataElementCounterpart;
+
+    private final Places mPlaces;
+    private final MapPoints mMapPoints;
+
+
+    public CitiesCollective(){
+    }
+
+    public CitiesData getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final CitiesData dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+
+    public Places getPlaces(){
+        return this.mPlaces;
+    }
+
+    public void setPlaces(Places places){
+        this.mPlaces = places;
+    }
+
+    public MapPoints getMapPoints(){
+        return this.mMapPoints;
+    }
+
+    public void setMapPoints(MapPoints mapPoints){
+        this.mMapPoints = mapPoints;
+    }
+
+}
+>>
+
+testImports() ::= <<
+INSERT IMPORTS
+>>

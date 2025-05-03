@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping xmlns="https://schemas.normalizedsystems.org/xsd/expanders/2024/0/0/mapping">
+  <artifact this="objectType.name + 'Collective'" importStrategy="java"/>
+
+  <value name="collective" eval="objectType.name"/>
+  <value name="dataElementName" eval="objectType.dataElement.getName()" />
+
+  <list name="superCollectives" eval="objectType.subCollectionOf" param="collective">
+    <value name="name" eval="collective.getName()"/>
+  </list>
+</mapping>

@@ -1,0 +1,24 @@
+delimiters "<", ">"
+
+base() ::= <<
+// <expanderComment>
+
+// anchor:imports:start
+@imports
+// anchor:imports:end
+
+public class <mixin> {
+    private final <dataElementName>Data dataElementCounterpart;
+
+    public <mixin>(){
+    }
+
+    public <dataElementName>Data getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final <dataElementName>Data dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+}
+>>

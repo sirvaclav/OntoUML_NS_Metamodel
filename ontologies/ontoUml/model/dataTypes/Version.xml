@@ -1,0 +1,4 @@
+<dataType name="Version">
+  <javaClass>java.lang.String</javaClass>
+  <primitiveType name="String"/>
+</dataType>

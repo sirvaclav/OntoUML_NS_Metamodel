@@ -1,0 +1,27 @@
+delimiters "%", "%"
+
+testBase() ::= <<
+// @expanderComment@
+
+// anchor:imports:start
+// anchor:imports:end
+
+public class BigCityMixin {
+    private final BigCityData dataElementCounterpart;
+
+    public BigCityMixin(){
+    }
+
+    public BigCityData getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final BigCityData dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+}
+>>
+
+testImports() ::= <<
+INSERT IMPORTS
+>>

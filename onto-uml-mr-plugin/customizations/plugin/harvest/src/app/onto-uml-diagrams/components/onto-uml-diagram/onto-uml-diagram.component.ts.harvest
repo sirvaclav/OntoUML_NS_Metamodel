@@ -1,0 +1,44 @@
+-- anchor:custom-imports:start
+import {modelExtensionSignal} from '@nsx/ngx-glint-models'
+import {ClassNode, ClassReference, createGraph, EdgeType, Graph} from '@nsx/ngx-glint-diagrams'
+import {ObjectTypeModel} from "../../../model/ontoUml/shared/ObjectTypeModel";
+import {SubKindModel} from "../../../model/ontoUml/shared/SubKindModel";
+-- anchor:custom-imports:end
+-- anchor:custom-members:start
+  objectTypes = modelExtensionSignal<ObjectTypeModel>(() => this.model, "ObjectType")
+
+  graph = computed(() => {
+    const graph = createGraph<ClassNode, ClassReference>()
+    for (let objectType of this.objectTypes()) {
+      let type = objectType._id.type;
+      graph.node({
+        data: {
+          id: objectType._id.key,
+          source: objectType,
+          members: [],
+          className: objectType.name,
+          stereotype: `<<${type.substring(type.indexOf('::') + 2)}>>`
+        }
+      })
+      if (objectType instanceof SubKindModel) {
+        let inheritance = objectType.subKindIdentityInheritance;
+        if (inheritance) {
+          graph.edge({
+            data: {
+              id: `${objectType._id.key}_inherit`,
+              source: objectType
+            },
+            type: EdgeType.IMPLEMENTATION,
+            from: objectType._id.key,
+            to: inheritance._id.key
+          })
+        }
+      }
+    }
+    return graph
+  })
+
+  select(node: ClassNode) {
+    this.modelSelectionService.select(node.source)
+  }
+-- anchor:custom-members:end

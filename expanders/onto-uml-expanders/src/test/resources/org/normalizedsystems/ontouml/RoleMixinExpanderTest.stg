@@ -1,0 +1,48 @@
+delimiters "%", "%"
+
+testBase() ::= <<
+// @expanderComment@
+
+// anchor:imports:start
+// anchor:imports:end
+
+public class BigCityRoleMixin {
+    private final BigCityData dataElementCounterpart;
+
+    private final CityRelator mCityRelator;
+    private final RegistrationRelator mRegistrationRelator;
+
+
+    public BigCityRoleMixin(){
+    }
+
+    public BigCityData getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final BigCityData dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+
+    public CityRelator getCityRelator(){
+        return this.mCityRelator;
+    }
+
+    public void setCityRelator(CityRelator cityRelator){
+        this.mCityRelator = cityRelator;
+    }
+
+    public RegistrationRelator getRegistrationRelator(){
+        return this.mRegistrationRelator;
+    }
+
+    public void setRegistrationRelator(RegistrationRelator registrationRelator){
+        this.mRegistrationRelator = registrationRelator;
+    }
+
+}
+>>
+
+testImports() ::= <<
+INSERT IMPORTS
+>>

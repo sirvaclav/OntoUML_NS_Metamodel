@@ -1,0 +1,9 @@
+<reference name="subCollectionOf">
+  <associationType name="aggregation"/>
+  <owner name="Collective" ontology="ontoUml"/>
+  <target name="Collective" ontology="ontoUml"/>
+  <cardinality>
+    <minimum>0</minimum>
+    <maximum>*</maximum>
+  </cardinality>
+</reference>

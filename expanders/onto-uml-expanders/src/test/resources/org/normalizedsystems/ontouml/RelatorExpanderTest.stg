@@ -1,0 +1,27 @@
+delimiters "%", "%"
+
+testBase() ::= <<
+// @expanderComment@
+
+// anchor:imports:start
+// anchor:imports:end
+
+public class IndustryRelator {
+    private final IndustryData dataElementCounterpart;
+
+    public IndustryRelator(){
+    }
+
+    public IndustryData getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final IndustryData dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+}
+>>
+
+testImports() ::= <<
+INSERT IMPORTS
+>>

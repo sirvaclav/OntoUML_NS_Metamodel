@@ -1,0 +1,27 @@
+delimiters "%", "%"
+
+testBase() ::= <<
+// @expanderComment@
+
+// anchor:imports:start
+// anchor:imports:end
+
+public class CityKind {
+    private final PersonData dataElementCounterpart;
+
+    public CityKind(){
+    }
+
+    public PersonData getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final PersonData dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+}
+>>
+
+testImports() ::= <<
+INSERT IMPORTS
+>>

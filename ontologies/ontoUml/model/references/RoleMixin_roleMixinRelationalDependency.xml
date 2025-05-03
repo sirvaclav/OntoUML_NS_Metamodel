@@ -1,0 +1,9 @@
+<reference name="roleMixinRelationalDependency">
+  <associationType name="association"/>
+  <owner name="RoleMixin" ontology="ontoUml"/>
+  <target name="Relator" ontology="ontoUml"/>
+  <cardinality>
+    <minimum>1</minimum>
+    <maximum>*</maximum>
+  </cardinality>
+</reference>

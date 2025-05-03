@@ -1,0 +1,4 @@
+<dataType name="PackageName">
+  <javaClass>java.lang.String</javaClass>
+  <primitiveType name="String"/>
+</dataType>

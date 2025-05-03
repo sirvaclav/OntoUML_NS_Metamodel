@@ -1,0 +1,6 @@
+-- anchor:custom-diagram:start
+  <glint-diagram-control-layout>
+    <glint-class-diagram diagram [graph]="graph()" (classSelected)="select($event)"
+    ></glint-class-diagram>
+  </glint-diagram-control-layout>
+-- anchor:custom-diagram:end

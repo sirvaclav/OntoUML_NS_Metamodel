@@ -1,0 +1,17 @@
+<dataResource type="elements::OptionType">
+  <!--
+  Add new option types here.
+  e.g.
+  <optionType name="my.option.without.value">
+    <valueConstraint>
+      <noValue>true</noValue>
+    </valueConstraint>
+  </optionType>
+  <optionType name="my.option.with.value">
+    <valueConstraint>
+      <isRequired>true</isRequired>
+      <matchRegularExpression>.*_.*</matchRegularExpression>
+    </valueConstraint>
+  </optionType>
+  -->
+</dataResource>

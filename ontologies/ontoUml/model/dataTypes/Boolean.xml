@@ -1,0 +1,4 @@
+<dataType name="Boolean">
+  <javaClass>java.lang.Boolean</javaClass>
+  <primitiveType name="Boolean"/>
+</dataType>

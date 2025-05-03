@@ -1,0 +1,17 @@
+<expansionSettings>
+  <modelDirectory>..</modelDirectory>
+  <expansionDirectory>../expansions</expansionDirectory>
+  <expansionResources>
+    <!-- anchor:expansion-resources:start -->
+    <expansionResource name="ontoUml.model:methamodelMetamodel" version="1.0.0-SNAPSHOT"/>
+    <expansionResource name="net.democritus.editor:editor-model-expanders" version="3.9.0"/>
+    <!-- anchor:expansion-resources:end -->
+  </expansionResources>
+  <expansions>
+    <expansion>
+      <type component="editorElements" name="EditorPlugin"/>
+      <target>plugin</target>
+      <profile name="NSX Plugin 3"/>
+    </expansion>
+  </expansions>
+</expansionSettings>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping xmlns="https://schemas.normalizedsystems.org/xsd/expanders/2024/0/0/mapping">
+  <artifact this="objectType.name + 'PhaseMixin'" importStrategy="java"/>
+
+  <value name="phaseMixin" eval="objectType.name"/>
+  <value name="dataElementName" eval="objectType.dataElement.getName()" />
+</mapping>

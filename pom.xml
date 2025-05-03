@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>net.democritus</groupId>
+    <artifactId>nsx-parent</artifactId>
+    <version>2024.2.0</version>
+  </parent>
+
+  <groupId>ontoUml.model</groupId>
+  <artifactId>methamodelMetamodel</artifactId>
+  <version>${revision}</version>
+
+  <properties>
+    <revision>1.0.0-SNAPSHOT</revision>
+
+    <!-- anchor:version-properties:start -->
+    <prime-core.version>2025.2.0</prime-core.version>
+    <expanders-maven-plugin.version>2024.7.0</expanders-maven-plugin.version>
+    <!-- anchor:version-properties:end -->
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>net.democritus.metamodel</groupId>
+      <artifactId>meta-core</artifactId>
+      <version>${prime-core.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>net.democritus.metamodel</groupId>
+      <artifactId>prime-metamodel</artifactId>
+      <version>${prime-core.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>ontologies</directory>
+        <targetPath>ontologyImports</targetPath>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>net.democritus.maven.plugins</groupId>
+        <artifactId>expanders-maven-plugin</artifactId>
+        <version>${expanders-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>metamodel</id>
+            <goals>
+              <goal>expansionResource</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

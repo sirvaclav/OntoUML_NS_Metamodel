@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping xmlns="https://schemas.normalizedsystems.org/xsd/expanders/2024/0/0/mapping">
+  <artifact this="objectType.name + 'RoleMixin'" importStrategy="java"/>
+
+  <value name="roleMixin" eval="objectType.name"/>
+  <value name="dataElementName" eval="objectType.dataElement.getName()" />
+
+  <list name="relators" eval="objectType.roleMixinRelationalDependency" param="relator">
+      <value name="name" eval="relator.getName()" />
+  </list>
+</mapping>

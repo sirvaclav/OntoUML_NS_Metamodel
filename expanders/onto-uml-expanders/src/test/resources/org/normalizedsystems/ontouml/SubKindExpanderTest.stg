@@ -1,0 +1,36 @@
+delimiters "%", "%"
+
+testBase() ::= <<
+// @expanderComment@
+
+// anchor:imports:start
+// anchor:imports:end
+
+public class BigCitySubKind {
+    private final BigCityData dataElementCounterpart;
+    private final City identityProvider;
+
+    public BigCitySubKind(){
+    }
+
+    public BigCityData getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final BigCityData dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+
+    public City getIdentityProvider(){
+        return this.identityProvider;
+    }
+
+    public void setIdentityProvider(final City identityProvider){
+        this.identityProvider = identityProvider;
+    }
+}
+>>
+
+testImports() ::= <<
+INSERT IMPORTS
+>>

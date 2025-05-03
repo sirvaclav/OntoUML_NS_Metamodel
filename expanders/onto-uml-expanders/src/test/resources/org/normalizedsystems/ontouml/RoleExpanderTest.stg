@@ -1,0 +1,49 @@
+delimiters "%", "%"
+
+testBase() ::= <<
+// @expanderComment@
+
+
+// anchor:imports:start
+// anchor:imports:end
+
+public class LegalPersonRole {
+    private final LegalPersonData dataElementCounterpart;
+
+    private final IndustryRelator mIndustryRelator;
+    private final RegistrationRelator mRegistrationRelator;
+
+
+    public LegalPersonRole(){
+    }
+
+    public LegalPersonData getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final LegalPersonData dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+
+    public IndustryRelator getIndustryRelator(){
+        return this.mIndustryRelator;
+    }
+
+    public void setIndustryRelator(IndustryRelator industryRelator){
+        this.mIndustryRelator = industryRelator;
+    }
+
+    public RegistrationRelator getRegistrationRelator(){
+        return this.mRegistrationRelator;
+    }
+
+    public void setRegistrationRelator(RegistrationRelator registrationRelator){
+        this.mRegistrationRelator = registrationRelator;
+    }
+
+}
+>>
+
+testImports() ::= <<
+INSERT IMPORTS
+>>

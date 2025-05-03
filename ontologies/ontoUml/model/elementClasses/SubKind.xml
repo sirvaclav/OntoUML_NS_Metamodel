@@ -1,0 +1,8 @@
+<elementClass name="SubKind">
+  <isGloballyUnique>false</isGloballyUnique>
+  <isAbstract>false</isAbstract>
+  <isSealed>false</isSealed>
+  <group name="OntoUML" ontology="ontoUml"/>
+  <role name="element"/>
+  <superClass name="RigidSortal" ontology="ontoUml"/>
+</elementClass>

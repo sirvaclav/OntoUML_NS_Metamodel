@@ -1,0 +1,16 @@
+# IntelliJ
+.idea
+*.iml
+
+# VSCode
+.vscode
+
+# Eclipse
+.project
+.settings
+.classpath
+
+# Expanders
+expansions
+target
+node_modules

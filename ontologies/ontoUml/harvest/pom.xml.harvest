@@ -1,0 +1,7 @@
+-- anchor:custom-dependencies:start
+    <dependency>
+      <groupId>net.democritus.model</groupId>
+      <artifactId>prime-builders</artifactId>
+      <version>2.5.0</version>
+    </dependency>
+-- anchor:custom-dependencies:end

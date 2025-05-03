@@ -1,0 +1,9 @@
+<reference name="aspectExistentialDependency">
+  <associationType name="association"/>
+  <owner name="Aspect" ontology="ontoUml"/>
+  <target name="ObjectType" ontology="ontoUml"/>
+  <cardinality>
+    <minimum>1</minimum>
+    <maximum>1</maximum>
+  </cardinality>
+</reference>

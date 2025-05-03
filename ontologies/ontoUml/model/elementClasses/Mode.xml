@@ -1,0 +1,8 @@
+<elementClass name="Mode">
+  <isGloballyUnique>false</isGloballyUnique>
+  <isAbstract>false</isAbstract>
+  <isSealed>false</isSealed>
+  <group name="OntoUML" ontology="ontoUml"/>
+  <role name="element"/>
+  <superClass name="Aspect" ontology="ontoUml"/>
+</elementClass>

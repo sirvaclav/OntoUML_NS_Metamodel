@@ -1,0 +1,30 @@
+<editorPlugin xmlns="https://schemas.normalizedsystems.org/xsd/editorElements/3/8/0">
+  <name>onto-uml</name>
+  <version>1.0.0-SNAPSHOT</version>
+  <pluginId>onto-uml-plugin</pluginId>
+  <groupId>org.normalizedsystems.mr.plugins</groupId>
+  <description>Plugin for OntoUML metamodel</description>
+  <pluginDependencies>
+    <pluginDependency>
+      <pluginName>prime</pluginName>
+      <artifact>net.democritus.editor:mrp-prime-plugin:1.3.1</artifact>
+    </pluginDependency>
+  </pluginDependencies>
+  <metamodels>
+    <editorMetamodel>
+      <type>dependency</type>
+      <ontologies>
+        <ontology>elements</ontology>
+      </ontologies>
+    </editorMetamodel>
+    <editorMetamodel>
+      <type>source</type>
+      <ontologies>
+        <ontology>ontoUml</ontology>
+      </ontologies>
+    </editorMetamodel>
+  </metamodels>
+  <options>
+    <mrp.requirements.nsModelServer.version>1.7.0</mrp.requirements.nsModelServer.version>
+  </options>
+</editorPlugin>

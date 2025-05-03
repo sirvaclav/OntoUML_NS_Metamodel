@@ -1,0 +1,38 @@
+delimiters "<", ">"
+
+base() ::= <<
+// <expanderComment>
+
+// anchor:imports:start
+@imports
+// anchor:imports:end
+
+public class <collective> {
+    private final <dataElementName>Data dataElementCounterpart;
+
+<superCollectives:{collective|
+    private final <collective.name> m<collective.name>;
+}>
+
+    public <collective>(){
+    }
+
+    public <dataElementName>Data getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final <dataElementName>Data dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+<superCollectives:{collective|
+
+    public <collective.name> get<collective.name>(){
+        return this.m<collective.name>;
+    \}
+
+    public void set<collective.name>(<collective.name> <collective.name.firstToLower>){
+        this.m<collective.name> = <collective.name.firstToLower>;
+    \}
+}>
+}
+>>
