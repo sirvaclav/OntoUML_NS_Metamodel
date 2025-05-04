@@ -1,0 +1,36 @@
+delimiters "%", "%"
+
+testBase() ::= <<
+// @expanderComment@
+
+// anchor:imports:start
+// anchor:imports:end
+
+public class IndustryMode {
+    private final IndustryData dataElementCounterpart;
+    private final PersonKind bearer;
+
+    public IndustryMode(){
+    }
+
+    public IndustryData getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final IndustryData dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+
+    public PersonKind getBearer(){
+        return this.bearer;
+    }
+
+    public void setBearer(final PersonKind bearer){
+        this.bearer = bearer;
+    }
+}
+>>
+
+testImports() ::= <<
+INSERT IMPORTS
+>>

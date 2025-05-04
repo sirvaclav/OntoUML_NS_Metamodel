@@ -1,9 +1,0 @@
-<reference name="antiRigidIdentityInheritance">
-  <associationType name="association"/>
-  <owner name="AntiRigidSortal" ontology="ontoUml"/>
-  <target name="Sortal" ontology="ontoUml"/>
-  <cardinality>
-    <minimum>1</minimum>
-    <maximum>1</maximum>
-  </cardinality>
-</reference>

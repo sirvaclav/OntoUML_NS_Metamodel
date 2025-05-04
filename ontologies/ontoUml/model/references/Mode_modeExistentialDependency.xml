@@ -1,6 +1,6 @@
-<reference name="aspectExistentialDependency">
+<reference name="modeExistentialDependency">
   <associationType name="association"/>
-  <owner name="Aspect" ontology="ontoUml"/>
+  <owner name="Mode" ontology="ontoUml"/>
   <target name="ObjectType" ontology="ontoUml"/>
   <cardinality>
     <minimum>1</minimum>

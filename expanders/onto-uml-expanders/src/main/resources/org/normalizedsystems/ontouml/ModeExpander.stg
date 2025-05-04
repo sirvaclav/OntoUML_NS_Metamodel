@@ -1,0 +1,33 @@
+delimiters "<", ">"
+
+base() ::= <<
+// <expanderComment>
+
+// anchor:imports:start
+@imports
+// anchor:imports:end
+
+public class <mode> {
+    private final <dataElementName>Data dataElementCounterpart;
+    private final <bearer> bearer;
+    
+    public <mode>(){
+    }
+
+    public <dataElementName>Data getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final <dataElementName>Data dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+
+    public <bearer> getBearer(){
+        return this.bearer;
+    }
+
+    public void setBearer(final <bearer> bearer){
+        this.bearer = bearer;
+    }
+}
+>>

@@ -1,8 +1,0 @@
-<elementClass name="AntiRigidSortal">
-  <isGloballyUnique>false</isGloballyUnique>
-  <isAbstract>true</isAbstract>
-  <isSealed>false</isSealed>
-  <group name="OntoUML" ontology="ontoUml"/>
-  <role name="element"/>
-  <superClass name="Sortal" ontology="ontoUml"/>
-</elementClass>

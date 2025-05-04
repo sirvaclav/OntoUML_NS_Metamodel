@@ -1,0 +1,9 @@
+<reference name="qualityPropertyDependency">
+  <associationType name="association"/>
+  <owner name="Phase" ontology="ontoUml"/>
+  <target name="Quality" ontology="ontoUml"/>
+  <cardinality>
+    <minimum>0</minimum>
+    <maximum>*</maximum>
+  </cardinality>
+</reference>

@@ -1,0 +1,36 @@
+delimiters "%", "%"
+
+testBase() ::= <<
+// @expanderComment@
+
+// anchor:imports:start
+// anchor:imports:end
+
+public class AgeQuality {
+    private final AgeData dataElementCounterpart;
+    private final PersonKind bearer;
+
+    public AgeQuality(){
+    }
+
+    public AgeData getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final AgeData dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+
+    public PersonKind getBearer(){
+        return this.bearer;
+    }
+
+    public void setBearer(final PersonKind bearer){
+        this.bearer = bearer;
+    }
+}
+>>
+
+testImports() ::= <<
+INSERT IMPORTS
+>>

@@ -1,0 +1,36 @@
+delimiters "%", "%"
+
+testBase() ::= <<
+// @expanderComment@
+
+// anchor:imports:start
+// anchor:imports:end
+
+public class WineQuantityQuantity {
+    private final WineData dataElementCounterpart;
+    private final FlaskKind containedIn;
+
+    public WineQuantity(){
+    }
+
+    public WineData getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final WineData dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+
+    public FlaskKind getContainedIn(){
+        return this.containedIn;
+    }
+
+    public void setContainedIn(final FlaskKind containedIn){
+        this.containedIn = containedIn;
+    }
+}
+>>
+
+testImports() ::= <<
+INSERT IMPORTS
+>>

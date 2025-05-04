@@ -3,8 +3,20 @@
   <artifact this="objectType.name + 'Role'" importStrategy="java"/>
 
   <value name="role" eval="objectType.name"/>
-  <value name="dataElementName" eval="objectType.dataElement.getName()" />
-<!--  <value name="skrr" eval="objectType.antiRigidIdentityInheritance.getName()"/>-->
+  <value name="dataElementName" eval="objectType.dataElement.getName()"/>
+
+  <conditionalValue name="identityProviderName">
+    <option if="objectType.kindIdentityProvider!=null" eval="objectType.kindIdentityProvider.getName()"/>
+    <option if="objectType.subKindIdentityProvider!=null" eval="objectType.subKindIdentityProvider.getName()"/>
+    <option if="objectType.roleIdentityProvider!=null" eval="objectType.roleIdentityProvider.getName()"/>
+    <option if="objectType.phaseIdentityProvider!=null" eval="objectType.phaseIdentityProvider.getName()"/>
+    <option if="objectType.qualityIdentityProvider!=null" eval="objectType.qualityIdentityProvider.getName()"/>
+    <option if="objectType.modeIdentityProvider!=null" eval="objectType.modeIdentityProvider.getName()"/>
+    <option if="objectType.quantityIdentityProvider!=null" eval="objectType.quantityIdentityProvider.getName()"/>
+    <option if="objectType.collectiveIdentityProvider!=null" eval="objectType.collectiveIdentityProvider.getName()"/>
+    <option if="objectType.relatorIdentityProvider!=null" eval="objectType.relatorIdentityProvider.getName()"/>
+  </conditionalValue>
+
   <list name="relators" eval="objectType.roleRelationalDependency" param="relator">
     <value name="name" eval="relator.getName()" />
   </list>

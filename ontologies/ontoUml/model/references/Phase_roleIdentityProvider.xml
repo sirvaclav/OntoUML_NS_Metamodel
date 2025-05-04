@@ -1,0 +1,9 @@
+<reference name="roleIdentityProvider">
+  <associationType name="association"/>
+  <owner name="Phase" ontology="ontoUml"/>
+  <target name="Role" ontology="ontoUml"/>
+  <cardinality>
+    <minimum>0</minimum>
+    <maximum>1</maximum>
+  </cardinality>
+</reference>

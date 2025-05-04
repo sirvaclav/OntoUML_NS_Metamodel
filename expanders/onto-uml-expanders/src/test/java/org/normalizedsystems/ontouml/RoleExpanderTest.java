@@ -1,14 +1,9 @@
 package org.normalizedsystems.ontouml;
 
-import net.democritus.elements.DataElementComposite;
-import net.democritus.expander.ExpanderTester;
 import net.democritus.expander.TestExpansion;
 import net.democritus.expander.junit.ExpanderTest;
 import net.democritus.expander.junit.TestModel;
-import net.democritus.model.common.TestModelBuilder;
 import net.democritus.spec.Spec;
-import ontoUml.model.AntiRigidSortalComposite;
-import ontoUml.model.CategoryComposite;
 import ontoUml.model.ObjectTypeComposite;
 import org.junit.jupiter.api.Test;
 
@@ -33,11 +28,12 @@ class RoleExpanderTest {
         objectType(role("LegalPersonRole",
             dataRef("dataElement", "ontoUml::LegalPerson"),
             dataRef("roleRelationalDependency", "ontoUml::IndustryRelator"),
-            dataRef("roleRelationalDependency", "ontoUml::RegistrationRelator")
-//            dataRef("antiRigidIdentityInheritance", "ontoUml::PersonKind")
+            dataRef("roleRelationalDependency", "ontoUml::RegistrationRelator"),
+            dataRef("kindIdentityProvider", "ontoUml::PersonKind")
         ))
     );
   }
+
 
 
   @Test

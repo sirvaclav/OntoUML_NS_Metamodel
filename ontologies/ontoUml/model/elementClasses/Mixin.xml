@@ -4,5 +4,5 @@
   <isSealed>false</isSealed>
   <group name="OntoUML" ontology="ontoUml"/>
   <role name="element"/>
-  <superClass name="NonSortal" ontology="ontoUml"/>
+  <superClass name="ObjectType" ontology="ontoUml"/>
 </elementClass>

@@ -1,0 +1,9 @@
+<reference name="qualityIdentityProvider">
+  <associationType name="association"/>
+  <owner name="Role" ontology="ontoUml"/>
+  <target name="Quality" ontology="ontoUml"/>
+  <cardinality>
+    <minimum>0</minimum>
+    <maximum>1</maximum>
+  </cardinality>
+</reference>

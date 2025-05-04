@@ -1,0 +1,12 @@
+<expander name="ModeExpander" xmlns="https://schemas.normalizedsystems.org/xsd/prime-core/2025/2/0/expander">
+  <packageName>org.normalizedsystems.ontouml</packageName>
+  <layerType name="SHARED_LAYER"/>
+  <technology name="COMMON"/>
+  <sourceType name="JAVA"/>
+  <elementType component="ontoUml" name="ObjectType"/>
+  <artifactName>$objectType.name$.java</artifactName>
+  <artifactPath>$module.rootDirectory$/$artifactSubFolders$</artifactPath>
+  <isApplicable>objectType.name.contains("Mode")</isApplicable>
+  <phase>expansion</phase>
+  <active value="true"/>
+</expander>

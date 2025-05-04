@@ -1,0 +1,9 @@
+<reference name="collectiveIdentityProvider">
+  <associationType name="association"/>
+  <owner name="Role" ontology="ontoUml"/>
+  <target name="Collective" ontology="ontoUml"/>
+  <cardinality>
+    <minimum>0</minimum>
+    <maximum>1</maximum>
+  </cardinality>
+</reference>

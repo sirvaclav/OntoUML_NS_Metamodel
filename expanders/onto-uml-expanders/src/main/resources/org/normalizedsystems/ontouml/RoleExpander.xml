@@ -6,7 +6,7 @@
   <elementType component="ontoUml" name="ObjectType"/>
   <artifactName>$objectType.name$.java</artifactName>
   <artifactPath>$module.rootDirectory$/$artifactSubFolders$</artifactPath>
-  <isApplicable>true</isApplicable>
+  <isApplicable>objectType.name.contains("Role") &amp;&amp; !objectType.name.contains("RoleMixin")</isApplicable>
   <phase>expansion</phase>
-  <active value="false"/>
+  <active value="true"/>
 </expander>

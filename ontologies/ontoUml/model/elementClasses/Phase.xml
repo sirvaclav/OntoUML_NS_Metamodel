@@ -4,5 +4,6 @@
   <isSealed>false</isSealed>
   <group name="OntoUML" ontology="ontoUml"/>
   <role name="element"/>
-  <superClass name="AntiRigidSortal" ontology="ontoUml"/>
+  <superClass name="ObjectType" ontology="ontoUml"/>
+  <description>Must have exactly one IdentityProvider and atleast one property dependency!</description>
 </elementClass>

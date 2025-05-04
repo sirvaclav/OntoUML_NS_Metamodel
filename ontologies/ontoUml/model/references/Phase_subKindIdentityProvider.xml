@@ -1,0 +1,9 @@
+<reference name="subKindIdentityProvider">
+  <associationType name="association"/>
+  <owner name="Phase" ontology="ontoUml"/>
+  <target name="SubKind" ontology="ontoUml"/>
+  <cardinality>
+    <minimum>0</minimum>
+    <maximum>1</maximum>
+  </cardinality>
+</reference>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping xmlns="https://schemas.normalizedsystems.org/xsd/expanders/2024/0/0/mapping">
+  <artifact this="objectType.name + 'Quantity'" importStrategy="java"/>
+
+  <value name="quantity" eval="objectType.name"/>
+  <value name="dataElementName" eval="objectType.dataElement.getName()"/>
+
+
+  <conditionalValue name="containedIn">
+    <option if="objectType.containment!=null" eval="objectType.containment.getName()"/>
+    <option if="objectType.subQuantityOf!=null" eval="objectType.subQuantityOf.getName()"/>
+  </conditionalValue>
+</mapping>

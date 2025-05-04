@@ -8,7 +8,7 @@ testBase() ::= <<
 
 public class BigCitySubKind {
     private final BigCityData dataElementCounterpart;
-    private final City identityProvider;
+    private final CityKind identityProvider;
 
     public BigCitySubKind(){
     }
@@ -21,11 +21,11 @@ public class BigCitySubKind {
         this.dataElementCounterpart = dataElementCounterpart;
     }
 
-    public City getIdentityProvider(){
+    public CityKind getIdentityProvider(){
         return this.identityProvider;
     }
 
-    public void setIdentityProvider(final City identityProvider){
+    public void setIdentityProvider(final CityKind identityProvider){
         this.identityProvider = identityProvider;
     }
 }

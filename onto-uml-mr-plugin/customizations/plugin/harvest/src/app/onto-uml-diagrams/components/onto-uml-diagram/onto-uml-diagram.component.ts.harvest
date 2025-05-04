@@ -21,7 +21,7 @@ import {SubKindModel} from "../../../model/ontoUml/shared/SubKindModel";
         }
       })
       if (objectType instanceof SubKindModel) {
-        let inheritance = objectType.subKindIdentityInheritance;
+        let inheritance = objectType.subKindIdentityProvider;
         if (inheritance) {
           graph.edge({
             data: {

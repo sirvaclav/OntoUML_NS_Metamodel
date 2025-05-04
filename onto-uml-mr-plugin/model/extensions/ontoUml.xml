@@ -2,16 +2,6 @@
   <name>ontoUml</name>
   <elementDetailComponents>
     <elementDetailComponent>
-      <name>AntiRigidSortal</name>
-      <autogenerate>false</autogenerate>
-      <elementClass>ontoUml::AntiRigidSortal</elementClass>
-    </elementDetailComponent>
-    <elementDetailComponent>
-      <name>Aspect</name>
-      <autogenerate>false</autogenerate>
-      <elementClass>ontoUml::Aspect</elementClass>
-    </elementDetailComponent>
-    <elementDetailComponent>
       <name>Category</name>
       <autogenerate>true</autogenerate>
       <elementClass>ontoUml::Category</elementClass>
@@ -38,11 +28,6 @@
       <name>Mode</name>
       <autogenerate>true</autogenerate>
       <elementClass>ontoUml::Mode</elementClass>
-    </elementDetailComponent>
-    <elementDetailComponent>
-      <name>NonSortal</name>
-      <autogenerate>false</autogenerate>
-      <elementClass>ontoUml::NonSortal</elementClass>
     </elementDetailComponent>
     <elementDetailComponent>
       <name>ObjectType</name>
@@ -75,11 +60,6 @@
       <elementClass>ontoUml::Relator</elementClass>
     </elementDetailComponent>
     <elementDetailComponent>
-      <name>RigidSortal</name>
-      <autogenerate>false</autogenerate>
-      <elementClass>ontoUml::RigidSortal</elementClass>
-    </elementDetailComponent>
-    <elementDetailComponent>
       <name>Role</name>
       <autogenerate>true</autogenerate>
       <elementClass>ontoUml::Role</elementClass>
@@ -88,11 +68,6 @@
       <name>RoleMixin</name>
       <autogenerate>true</autogenerate>
       <elementClass>ontoUml::RoleMixin</elementClass>
-    </elementDetailComponent>
-    <elementDetailComponent>
-      <name>Sortal</name>
-      <autogenerate>false</autogenerate>
-      <elementClass>ontoUml::Sortal</elementClass>
     </elementDetailComponent>
     <elementDetailComponent>
       <name>SubKind</name>
@@ -104,16 +79,6 @@
     <editorAction type="editorElements::DeleteAction" xsi:type="deleteAction">
       <name>deleteObjectType</name>
       <elementClass>ontoUml::ObjectType</elementClass>
-    </editorAction>
-    <editorAction type="editorElements::CreateAction" xsi:type="createAction">
-      <name>createAntiRigidSortal</name>
-      <reference>ontoUml::ObjectType::component</reference>
-      <elementDetailComponent>ontoUml::AntiRigidSortal</elementDetailComponent>
-    </editorAction>
-    <editorAction type="editorElements::CreateAction" xsi:type="createAction">
-      <name>createAspect</name>
-      <reference>ontoUml::ObjectType::component</reference>
-      <elementDetailComponent>ontoUml::Aspect</elementDetailComponent>
     </editorAction>
     <editorAction type="editorElements::CreateAction" xsi:type="createAction">
       <name>createCategory</name>
@@ -139,11 +104,6 @@
       <name>createMode</name>
       <reference>ontoUml::ObjectType::component</reference>
       <elementDetailComponent>ontoUml::Mode</elementDetailComponent>
-    </editorAction>
-    <editorAction type="editorElements::CreateAction" xsi:type="createAction">
-      <name>createNonSortal</name>
-      <reference>ontoUml::ObjectType::component</reference>
-      <elementDetailComponent>ontoUml::NonSortal</elementDetailComponent>
     </editorAction>
     <editorAction type="editorElements::CreateAction" xsi:type="createAction">
       <name>createObjectType</name>
@@ -176,11 +136,6 @@
       <elementDetailComponent>ontoUml::Relator</elementDetailComponent>
     </editorAction>
     <editorAction type="editorElements::CreateAction" xsi:type="createAction">
-      <name>createRigidSortal</name>
-      <reference>ontoUml::ObjectType::component</reference>
-      <elementDetailComponent>ontoUml::RigidSortal</elementDetailComponent>
-    </editorAction>
-    <editorAction type="editorElements::CreateAction" xsi:type="createAction">
       <name>createRole</name>
       <reference>ontoUml::ObjectType::component</reference>
       <elementDetailComponent>ontoUml::Role</elementDetailComponent>
@@ -191,22 +146,9 @@
       <elementDetailComponent>ontoUml::RoleMixin</elementDetailComponent>
     </editorAction>
     <editorAction type="editorElements::CreateAction" xsi:type="createAction">
-      <name>createSortal</name>
-      <reference>ontoUml::ObjectType::component</reference>
-      <elementDetailComponent>ontoUml::Sortal</elementDetailComponent>
-    </editorAction>
-    <editorAction type="editorElements::CreateAction" xsi:type="createAction">
       <name>createSubKind</name>
       <reference>ontoUml::ObjectType::component</reference>
       <elementDetailComponent>ontoUml::SubKind</elementDetailComponent>
-    </editorAction>
-    <editorAction type="editorElements::DeleteAction" xsi:type="deleteAction">
-      <name>deleteAntiRigidSortal</name>
-      <elementClass>ontoUml::AntiRigidSortal</elementClass>
-    </editorAction>
-    <editorAction type="editorElements::DeleteAction" xsi:type="deleteAction">
-      <name>deleteAspect</name>
-      <elementClass>ontoUml::Aspect</elementClass>
     </editorAction>
     <editorAction type="editorElements::DeleteAction" xsi:type="deleteAction">
       <name>deleteCategory</name>
@@ -229,10 +171,6 @@
       <elementClass>ontoUml::Mode</elementClass>
     </editorAction>
     <editorAction type="editorElements::DeleteAction" xsi:type="deleteAction">
-      <name>deleteNonSortal</name>
-      <elementClass>ontoUml::NonSortal</elementClass>
-    </editorAction>
-    <editorAction type="editorElements::DeleteAction" xsi:type="deleteAction">
       <name>deletePhase</name>
       <elementClass>ontoUml::Phase</elementClass>
     </editorAction>
@@ -253,20 +191,12 @@
       <elementClass>ontoUml::Relator</elementClass>
     </editorAction>
     <editorAction type="editorElements::DeleteAction" xsi:type="deleteAction">
-      <name>deleteRigidSortal</name>
-      <elementClass>ontoUml::RigidSortal</elementClass>
-    </editorAction>
-    <editorAction type="editorElements::DeleteAction" xsi:type="deleteAction">
       <name>deleteRole</name>
       <elementClass>ontoUml::Role</elementClass>
     </editorAction>
     <editorAction type="editorElements::DeleteAction" xsi:type="deleteAction">
       <name>deleteRoleMixin</name>
       <elementClass>ontoUml::RoleMixin</elementClass>
-    </editorAction>
-    <editorAction type="editorElements::DeleteAction" xsi:type="deleteAction">
-      <name>deleteSortal</name>
-      <elementClass>ontoUml::Sortal</elementClass>
     </editorAction>
     <editorAction type="editorElements::DeleteAction" xsi:type="deleteAction">
       <name>deleteSubKind</name>
@@ -280,26 +210,6 @@
         <editorAction>ontoUml::deleteObjectType</editorAction>
       </actions>
       <elementClass>ontoUml::ObjectType</elementClass>
-      <options>
-        <mrp.material.symbols.icon>toolbar</mrp.material.symbols.icon>
-      </options>
-    </elementTreeNode>
-    <elementTreeNode>
-      <name>AntiRigidSortal</name>
-      <actions>
-        <editorAction>ontoUml::deleteAntiRigidSortal</editorAction>
-      </actions>
-      <elementClass>ontoUml::AntiRigidSortal</elementClass>
-      <options>
-        <mrp.material.symbols.icon>toolbar</mrp.material.symbols.icon>
-      </options>
-    </elementTreeNode>
-    <elementTreeNode>
-      <name>Aspect</name>
-      <actions>
-        <editorAction>ontoUml::deleteAspect</editorAction>
-      </actions>
-      <elementClass>ontoUml::Aspect</elementClass>
       <options>
         <mrp.material.symbols.icon>toolbar</mrp.material.symbols.icon>
       </options>
@@ -355,16 +265,6 @@
       </options>
     </elementTreeNode>
     <elementTreeNode>
-      <name>NonSortal</name>
-      <actions>
-        <editorAction>ontoUml::deleteNonSortal</editorAction>
-      </actions>
-      <elementClass>ontoUml::NonSortal</elementClass>
-      <options>
-        <mrp.material.symbols.icon>toolbar</mrp.material.symbols.icon>
-      </options>
-    </elementTreeNode>
-    <elementTreeNode>
       <name>Phase</name>
       <actions>
         <editorAction>ontoUml::deletePhase</editorAction>
@@ -415,16 +315,6 @@
       </options>
     </elementTreeNode>
     <elementTreeNode>
-      <name>RigidSortal</name>
-      <actions>
-        <editorAction>ontoUml::deleteRigidSortal</editorAction>
-      </actions>
-      <elementClass>ontoUml::RigidSortal</elementClass>
-      <options>
-        <mrp.material.symbols.icon>toolbar</mrp.material.symbols.icon>
-      </options>
-    </elementTreeNode>
-    <elementTreeNode>
       <name>Role</name>
       <actions>
         <editorAction>ontoUml::deleteRole</editorAction>
@@ -440,16 +330,6 @@
         <editorAction>ontoUml::deleteRoleMixin</editorAction>
       </actions>
       <elementClass>ontoUml::RoleMixin</elementClass>
-      <options>
-        <mrp.material.symbols.icon>toolbar</mrp.material.symbols.icon>
-      </options>
-    </elementTreeNode>
-    <elementTreeNode>
-      <name>Sortal</name>
-      <actions>
-        <editorAction>ontoUml::deleteSortal</editorAction>
-      </actions>
-      <elementClass>ontoUml::Sortal</elementClass>
       <options>
         <mrp.material.symbols.icon>toolbar</mrp.material.symbols.icon>
       </options>

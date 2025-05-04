@@ -3,12 +3,12 @@ delimiters "%", "%"
 testBase() ::= <<
 // @expanderComment@
 
-
 // anchor:imports:start
 // anchor:imports:end
 
 public class LegalPersonRole {
     private final LegalPersonData dataElementCounterpart;
+    private final PersonKind identityProvider;
 
     private final IndustryRelator mIndustryRelator;
     private final RegistrationRelator mRegistrationRelator;
@@ -23,6 +23,14 @@ public class LegalPersonRole {
 
     public void setDataElementCounterpart(final LegalPersonData dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
+    }
+
+    public PersonKind getIdentityProvider(){
+        return this.identityProvider;
+    }
+
+    public void setIdentityProvider(final PersonKind identityProvider){
+        this.identityProvider = identityProvider;
     }
 
     public IndustryRelator getIndustryRelator(){

@@ -28,10 +28,10 @@ class SubKindExpanderTest {
   Spec baseModel() {
     return component("ontoUml",
         dataElement("BigCity"),
-        kind("City"),
+        quality("CityKind"),
         objectType(subKind("BigCitySubKind",
             dataRef("dataElement", "ontoUml::BigCity"),
-            dataRef("subKindIdentityInheritance", "ontoUml::City")
+            dataRef("qualityIdentityProvider", "ontoUml::CityKind")
             )
         )
     );

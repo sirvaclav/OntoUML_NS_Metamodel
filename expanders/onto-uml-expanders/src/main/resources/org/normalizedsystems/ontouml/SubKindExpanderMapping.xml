@@ -4,5 +4,14 @@
 
   <value name="subKind" eval="objectType.name"/>
   <value name="dataElementName" eval="objectType.dataElement.getName()" />
-  <value name="identityProvider" eval="objectType.subKindIdentityInheritance.getName()" />
+
+  <conditionalValue name="identityProviderName">
+    <option if="objectType.kindIdentityProvider!=null" eval="objectType.kindIdentityProvider.getName()"/>
+    <option if="objectType.subKindIdentityProvider!=null" eval="objectType.subKindIdentityProvider.getName()"/>
+    <option if="objectType.qualityIdentityProvider!=null" eval="objectType.qualityIdentityProvider.getName()"/>
+    <option if="objectType.modeIdentityProvider!=null" eval="objectType.modeIdentityProvider.getName()"/>
+    <option if="objectType.quantityIdentityProvider!=null" eval="objectType.quantityIdentityProvider.getName()"/>
+    <option if="objectType.collectiveIdentityProvider!=null" eval="objectType.collectiveIdentityProvider.getName()"/>
+    <option if="objectType.relatorIdentityProvider!=null" eval="objectType.relatorIdentityProvider.getName()"/>
+  </conditionalValue>
 </mapping>

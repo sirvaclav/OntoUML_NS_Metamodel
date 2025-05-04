@@ -3,7 +3,7 @@
   <owner name="Quantity" ontology="ontoUml"/>
   <target name="ObjectType" ontology="ontoUml"/>
   <cardinality>
-    <minimum>1</minimum>
+    <minimum>0</minimum>
     <maximum>1</maximum>
   </cardinality>
 </reference>

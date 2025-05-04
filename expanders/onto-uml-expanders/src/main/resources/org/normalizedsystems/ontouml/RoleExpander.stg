@@ -3,13 +3,13 @@ delimiters "<", ">"
 base() ::= <<
 // <expanderComment>
 
-
 // anchor:imports:start
 @imports
 // anchor:imports:end
 
 public class <role> {
     private final <dataElementName>Data dataElementCounterpart;
+    private final <identityProviderName> identityProvider;
 
 <relators:{relator|
     private final <relator.name> m<relator.name>;
@@ -24,6 +24,14 @@ public class <role> {
 
     public void setDataElementCounterpart(final <dataElementName>Data dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
+    }
+
+    public <identityProviderName> getIdentityProvider(){
+        return this.identityProvider;
+    }
+
+    public void setIdentityProvider(final <identityProviderName> identityProvider){
+        this.identityProvider = identityProvider;
     }
 <relators:{relator|
 

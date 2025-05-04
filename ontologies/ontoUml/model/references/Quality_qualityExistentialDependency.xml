@@ -1,0 +1,9 @@
+<reference name="qualityExistentialDependency">
+  <associationType name="association"/>
+  <owner name="Quality" ontology="ontoUml"/>
+  <target name="ObjectType" ontology="ontoUml"/>
+  <cardinality>
+    <minimum>1</minimum>
+    <maximum>1</maximum>
+  </cardinality>
+</reference>

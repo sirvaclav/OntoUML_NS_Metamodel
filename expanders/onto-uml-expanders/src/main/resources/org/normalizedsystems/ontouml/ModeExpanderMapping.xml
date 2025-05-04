@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping xmlns="https://schemas.normalizedsystems.org/xsd/expanders/2024/0/0/mapping">
+  <artifact this="objectType.name + 'Mode'" importStrategy="java"/>
+
+  <value name="mode" eval="objectType.name"/>
+  <value name="dataElementName" eval="objectType.dataElement.getName()"/>
+  <value name="bearer" eval="objectType.modeExistentialDependency.getName()"/>
+</mapping>

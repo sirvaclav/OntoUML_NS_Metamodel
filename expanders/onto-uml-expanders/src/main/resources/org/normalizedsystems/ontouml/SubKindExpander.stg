@@ -9,7 +9,7 @@ base() ::= <<
 
 public class <subKind> {
     private final <dataElementName>Data dataElementCounterpart;
-    private final <identityProvider> identityProvider;
+    private final <identityProviderName> identityProvider;
 
     public <subKind>(){
     }
@@ -22,11 +22,11 @@ public class <subKind> {
         this.dataElementCounterpart = dataElementCounterpart;
     }
 
-    public <identityProvider> getIdentityProvider(){
+    public <identityProviderName> getIdentityProvider(){
         return this.identityProvider;
     }
 
-    public void setIdentityProvider(final <identityProvider> identityProvider){
+    public void setIdentityProvider(final <identityProviderName> identityProvider){
         this.identityProvider = identityProvider;
     }
 }

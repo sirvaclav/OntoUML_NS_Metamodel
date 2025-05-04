@@ -1,9 +1,9 @@
-<reference name="subKindIdentityInheritance">
+<reference name="modeIdentityProvider">
   <associationType name="association"/>
   <owner name="SubKind" ontology="ontoUml"/>
-  <target name="RigidSortal" ontology="ontoUml"/>
+  <target name="Mode" ontology="ontoUml"/>
   <cardinality>
-    <minimum>1</minimum>
+    <minimum>0</minimum>
     <maximum>1</maximum>
   </cardinality>
 </reference>

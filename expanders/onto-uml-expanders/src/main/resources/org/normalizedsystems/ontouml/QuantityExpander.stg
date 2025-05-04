@@ -1,0 +1,33 @@
+delimiters "<", ">"
+
+base() ::= <<
+// <expanderComment>
+
+// anchor:imports:start
+@imports
+// anchor:imports:end
+
+public class <quantity>Quantity {
+    private final <dataElementName>Data dataElementCounterpart;
+    private final <containedIn> containedIn;
+    
+    public <quantity>(){
+    }
+
+    public <dataElementName>Data getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final <dataElementName>Data dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+
+    public <containedIn> getContainedIn(){
+        return this.containedIn;
+    }
+
+    public void setContainedIn(final <containedIn> containedIn){
+        this.containedIn = containedIn;
+    }
+}
+>>

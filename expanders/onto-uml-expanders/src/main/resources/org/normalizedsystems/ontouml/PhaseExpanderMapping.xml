@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapping xmlns="https://schemas.normalizedsystems.org/xsd/expanders/2024/0/0/mapping">
+  <artifact this="objectType.name + 'Phase'" importStrategy="java"/>
+
+  <value name="phase" eval="objectType.name"/>
+  <value name="dataElementName" eval="objectType.dataElement.getName()"/>
+
+  <conditionalValue name="identityProviderName">
+    <option if="objectType.kindIdentityProvider!=null" eval="objectType.kindIdentityProvider.getName()"/>
+    <option if="objectType.subKindIdentityProvider!=null" eval="objectType.subKindIdentityProvider.getName()"/>
+    <option if="objectType.roleIdentityProvider!=null" eval="objectType.roleIdentityProvider.getName()"/>
+    <option if="objectType.phaseIdentityProvider!=null" eval="objectType.phaseIdentityProvider.getName()"/>
+    <option if="objectType.qualityIdentityProvider!=null" eval="objectType.qualityIdentityProvider.getName()"/>
+    <option if="objectType.modeIdentityProvider!=null" eval="objectType.modeIdentityProvider.getName()"/>
+    <option if="objectType.quantityIdentityProvider!=null" eval="objectType.quantityIdentityProvider.getName()"/>
+    <option if="objectType.collectiveIdentityProvider!=null" eval="objectType.collectiveIdentityProvider.getName()"/>
+    <option if="objectType.relatorIdentityProvider!=null" eval="objectType.relatorIdentityProvider.getName()"/>
+  </conditionalValue>
+
+  <list name="modes" eval="objectType.modePropertyDependency" param="mode">
+    <value name="name" eval="mode.getName()" />
+  </list>
+
+  <list name="qualities" eval="objectType.qualityPropertyDependency" param="quality">
+    <value name="name" eval="quality.getName()" />
+  </list>
+</mapping>

@@ -1,0 +1,59 @@
+delimiters "<", ">"
+
+base() ::= <<
+// <expanderComment>
+
+// anchor:imports:start
+@imports
+// anchor:imports:end
+
+public class <phase> {
+    private final <dataElementName>Data dataElementCounterpart;
+    private final <identityProviderName> identityProvider;
+
+<modes:{mode|
+    private final <mode.name> m<mode.name>;
+}>
+<qualities:{quality|
+    private final <quality.name> m<quality.name>;
+}>
+
+    public <phase>(){
+    }
+
+    public <dataElementName>Data getDataElementCounterpart(){
+        return this.dataElementCounterpart;
+    }
+
+    public void setDataElementCounterpart(final <dataElementName>Data dataElementCounterpart){
+        this.dataElementCounterpart = dataElementCounterpart;
+    }
+
+    public <identityProviderName> getIdentityProvider(){
+        return this.identityProvider;
+    }
+
+    public void setIdentityProvider(final <identityProviderName> identityProvider){
+        this.identityProvider = identityProvider;
+    }
+<modes:{mode|
+
+    public <mode.name> get<mode.name>(){
+        return this.m<mode.name>;
+    \}
+
+    public void set<mode.name>(<mode.name> <mode.name.firstToLower>){
+        this.m<mode.name> = <mode.name.firstToLower>;
+    \}
+}>
+<qualities:{quality|
+    public <quality.name> get<quality.name>(){
+        return this.m<quality.name>;
+    \}
+
+    public void set<quality.name>(<quality.name> <quality.name.firstToLower>){
+        this.m<quality.name> = <quality.name.firstToLower>;
+    \}
+}>
+}
+>>
