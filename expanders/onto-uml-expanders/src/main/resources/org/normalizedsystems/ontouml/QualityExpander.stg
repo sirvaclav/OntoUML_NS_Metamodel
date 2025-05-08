@@ -8,17 +8,17 @@ base() ::= <<
 // anchor:imports:end
 
 public class <quality> {
-    private final <dataElementName>Data dataElementCounterpart;
+    private final <dataElementName>Details dataElementCounterpart;
     private final <bearer> bearer;
     
     public <quality>(){
     }
 
-    public <dataElementName>Data getDataElementCounterpart(){
+    public <dataElementName>Details getDataElementCounterpart(){
         return this.dataElementCounterpart;
     }
 
-    public void setDataElementCounterpart(final <dataElementName>Data dataElementCounterpart){
+    public void setDataElementCounterpart(final <dataElementName>Details dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
     }
 

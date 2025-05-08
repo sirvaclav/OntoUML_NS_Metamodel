@@ -7,17 +7,17 @@ testBase() ::= <<
 // anchor:imports:end
 
 public class BigCitySubKind {
-    private final BigCityData dataElementCounterpart;
+    private final BigCityDetails dataElementCounterpart;
     private final CityKind identityProvider;
 
     public BigCitySubKind(){
     }
 
-    public BigCityData getDataElementCounterpart(){
+    public BigCityDetails getDataElementCounterpart(){
         return this.dataElementCounterpart;
     }
 
-    public void setDataElementCounterpart(final BigCityData dataElementCounterpart){
+    public void setDataElementCounterpart(final BigCityDetails dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
     }
 

@@ -7,7 +7,7 @@ testBase() ::= <<
 // anchor:imports:end
 
 public class CitiesCollective {
-    private final CitiesData dataElementCounterpart;
+    private final CitiesDetails dataElementCounterpart;
 
     private final Places mPlaces;
     private final MapPoints mMapPoints;
@@ -16,11 +16,11 @@ public class CitiesCollective {
     public CitiesCollective(){
     }
 
-    public CitiesData getDataElementCounterpart(){
+    public CitiesDetails getDataElementCounterpart(){
         return this.dataElementCounterpart;
     }
 
-    public void setDataElementCounterpart(final CitiesData dataElementCounterpart){
+    public void setDataElementCounterpart(final CitiesDetails dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
     }
 

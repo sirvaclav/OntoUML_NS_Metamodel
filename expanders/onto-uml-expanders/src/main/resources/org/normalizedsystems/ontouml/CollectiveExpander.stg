@@ -8,7 +8,7 @@ base() ::= <<
 // anchor:imports:end
 
 public class <collective> {
-    private final <dataElementName>Data dataElementCounterpart;
+    private final <dataElementName>Details dataElementCounterpart;
 
 <superCollectives:{collective|
     private final <collective.name> m<collective.name>;
@@ -17,11 +17,11 @@ public class <collective> {
     public <collective>(){
     }
 
-    public <dataElementName>Data getDataElementCounterpart(){
+    public <dataElementName>Details getDataElementCounterpart(){
         return this.dataElementCounterpart;
     }
 
-    public void setDataElementCounterpart(final <dataElementName>Data dataElementCounterpart){
+    public void setDataElementCounterpart(final <dataElementName>Details dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
     }
 <superCollectives:{collective|

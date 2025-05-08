@@ -7,17 +7,17 @@ testBase() ::= <<
 // anchor:imports:end
 
 public class AgeQuality {
-    private final AgeData dataElementCounterpart;
+    private final AgeDetails dataElementCounterpart;
     private final PersonKind bearer;
 
     public AgeQuality(){
     }
 
-    public AgeData getDataElementCounterpart(){
+    public AgeDetails getDataElementCounterpart(){
         return this.dataElementCounterpart;
     }
 
-    public void setDataElementCounterpart(final AgeData dataElementCounterpart){
+    public void setDataElementCounterpart(final AgeDetails dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
     }
 

@@ -7,16 +7,16 @@ testBase() ::= <<
 // anchor:imports:end
 
 public class CityKind {
-    private final PersonData dataElementCounterpart;
+    private final PersonDetails dataElementCounterpart;
 
     public CityKind(){
     }
 
-    public PersonData getDataElementCounterpart(){
+    public PersonDetails getDataElementCounterpart(){
         return this.dataElementCounterpart;
     }
 
-    public void setDataElementCounterpart(final PersonData dataElementCounterpart){
+    public void setDataElementCounterpart(final PersonDetails dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
     }
 }

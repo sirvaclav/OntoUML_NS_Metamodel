@@ -7,16 +7,16 @@ testBase() ::= <<
 // anchor:imports:end
 
 public class BigCityPhaseMixin {
-    private final BigCityData dataElementCounterpart;
+    private final BigCityDetails dataElementCounterpart;
 
     public BigCityPhaseMixin(){
     }
 
-    public BigCityData getDataElementCounterpart(){
+    public BigCityDetails getDataElementCounterpart(){
         return this.dataElementCounterpart;
     }
 
-    public void setDataElementCounterpart(final BigCityData dataElementCounterpart){
+    public void setDataElementCounterpart(final BigCityDetails dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
     }
 }

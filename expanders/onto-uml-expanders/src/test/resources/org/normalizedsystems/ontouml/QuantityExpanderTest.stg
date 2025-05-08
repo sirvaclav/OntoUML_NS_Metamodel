@@ -7,17 +7,17 @@ testBase() ::= <<
 // anchor:imports:end
 
 public class WineQuantityQuantity {
-    private final WineData dataElementCounterpart;
+    private final WineDetails dataElementCounterpart;
     private final FlaskKind containedIn;
 
     public WineQuantity(){
     }
 
-    public WineData getDataElementCounterpart(){
+    public WineDetails getDataElementCounterpart(){
         return this.dataElementCounterpart;
     }
 
-    public void setDataElementCounterpart(final WineData dataElementCounterpart){
+    public void setDataElementCounterpart(final WineDetails dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
     }
 

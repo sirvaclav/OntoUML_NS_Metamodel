@@ -7,7 +7,7 @@ testBase() ::= <<
 // anchor:imports:end
 
 public class LegalPersonPhase {
-    private final LegalPersonData dataElementCounterpart;
+    private final LegalPersonDetails dataElementCounterpart;
     private final PersonKind identityProvider;
 
     private final IndustryMode mIndustryMode;
@@ -20,11 +20,11 @@ public class LegalPersonPhase {
     public LegalPersonPhase(){
     }
 
-    public LegalPersonData getDataElementCounterpart(){
+    public LegalPersonDetails getDataElementCounterpart(){
         return this.dataElementCounterpart;
     }
 
-    public void setDataElementCounterpart(final LegalPersonData dataElementCounterpart){
+    public void setDataElementCounterpart(final LegalPersonDetails dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
     }
 

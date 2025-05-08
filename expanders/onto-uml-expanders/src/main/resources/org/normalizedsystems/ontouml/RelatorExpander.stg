@@ -8,16 +8,16 @@ base() ::= <<
 // anchor:imports:end
 
 public class <relator> {
-    private final <dataElementName>Data dataElementCounterpart;
+    private final <dataElementName>Details dataElementCounterpart;
 
     public <relator>(){
     }
 
-    public <dataElementName>Data getDataElementCounterpart(){
+    public <dataElementName>Details getDataElementCounterpart(){
         return this.dataElementCounterpart;
     }
 
-    public void setDataElementCounterpart(final <dataElementName>Data dataElementCounterpart){
+    public void setDataElementCounterpart(final <dataElementName>Details dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
     }
 }

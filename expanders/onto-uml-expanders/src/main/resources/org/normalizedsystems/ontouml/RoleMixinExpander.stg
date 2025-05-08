@@ -8,7 +8,7 @@ base() ::= <<
 // anchor:imports:end
 
 public class <roleMixin> {
-    private final <dataElementName>Data dataElementCounterpart;
+    private final <dataElementName>Details dataElementCounterpart;
 
 <relators:{relator|
     private final <relator.name> m<relator.name>;
@@ -17,11 +17,11 @@ public class <roleMixin> {
     public <roleMixin>(){
     }
 
-    public <dataElementName>Data getDataElementCounterpart(){
+    public <dataElementName>Details getDataElementCounterpart(){
         return this.dataElementCounterpart;
     }
 
-    public void setDataElementCounterpart(final <dataElementName>Data dataElementCounterpart){
+    public void setDataElementCounterpart(final <dataElementName>Details dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
     }
 <relators:{relator|

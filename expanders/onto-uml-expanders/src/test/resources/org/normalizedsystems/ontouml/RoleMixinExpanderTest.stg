@@ -7,7 +7,7 @@ testBase() ::= <<
 // anchor:imports:end
 
 public class BigCityRoleMixin {
-    private final BigCityData dataElementCounterpart;
+    private final BigCityDetails dataElementCounterpart;
 
     private final CityRelator mCityRelator;
     private final RegistrationRelator mRegistrationRelator;
@@ -16,11 +16,11 @@ public class BigCityRoleMixin {
     public BigCityRoleMixin(){
     }
 
-    public BigCityData getDataElementCounterpart(){
+    public BigCityDetails getDataElementCounterpart(){
         return this.dataElementCounterpart;
     }
 
-    public void setDataElementCounterpart(final BigCityData dataElementCounterpart){
+    public void setDataElementCounterpart(final BigCityDetails dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
     }
 

@@ -7,16 +7,16 @@ testBase() ::= <<
 // anchor:imports:end
 
 public class IndustryRelator {
-    private final IndustryData dataElementCounterpart;
+    private final IndustryDetails dataElementCounterpart;
 
     public IndustryRelator(){
     }
 
-    public IndustryData getDataElementCounterpart(){
+    public IndustryDetails getDataElementCounterpart(){
         return this.dataElementCounterpart;
     }
 
-    public void setDataElementCounterpart(final IndustryData dataElementCounterpart){
+    public void setDataElementCounterpart(final IndustryDetails dataElementCounterpart){
         this.dataElementCounterpart = dataElementCounterpart;
     }
 }
