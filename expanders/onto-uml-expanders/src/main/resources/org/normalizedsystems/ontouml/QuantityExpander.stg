@@ -7,7 +7,7 @@ base() ::= <<
 @imports
 // anchor:imports:end
 
-public class <quantity>Quantity {
+public class <quantity> {
     private final <dataElementName>Details dataElementCounterpart;
     private final <containedIn> containedIn;
     

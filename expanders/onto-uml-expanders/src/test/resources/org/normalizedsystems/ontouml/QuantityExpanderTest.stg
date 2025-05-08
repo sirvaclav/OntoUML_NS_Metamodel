@@ -6,7 +6,7 @@ testBase() ::= <<
 // anchor:imports:start
 // anchor:imports:end
 
-public class WineQuantityQuantity {
+public class WineQuantity {
     private final WineDetails dataElementCounterpart;
     private final FlaskKind containedIn;
 
